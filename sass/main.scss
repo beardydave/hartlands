@@ -51,10 +51,10 @@ header {
     font-weight: 400;
   }
   .icofont-long-arrow-down {
-      position: absolute;
-      bottom: 1rem;
-      font-size: 4rem;
-      animation: float 2s linear infinite;
+    position: absolute;
+    bottom: 1rem;
+    font-size: 4rem;
+    animation: float 2s linear infinite;
   }
 }
 
@@ -101,6 +101,9 @@ header {
 }
 
 @media (max-width: 400px) {
+  header {
+    height: 80vh;
+  }
   header .main__title {
     font-size: 5rem;
   }
@@ -113,18 +116,28 @@ header {
   }
 }
 
-@media(max-height: 400px){
-    header .icofont-long-arrow-down {
-        font-size: 3rem;
-    }
+@media (max-height: 400px) {
+  header .icofont-long-arrow-down {
+    font-size: 3rem;
+  }
 }
 
 @keyframes float {
-    0% {transform: translateY(0);}
-    25% {transform: translateY(1px);}
-    50% {transform: translateY(0);}
-    75% {transform: translateY(-1px);}
-    100% {transform: translateY(0);}
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(1px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-1px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @keyframes pint-loader {
