@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 20px;
+  background-color: #eee;
+  font-family: "Rubik", sans-serif;
+}
+
+header {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 8px;
+  color: #eee;
+}
+header .title-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -2;
+}
+header .filter-color {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+header .main__title {
+  font-size: 6rem;
+  text-align: center;
+}
+header .logo {
+  width: 100px;
+}
+header .sub__title {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.main {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main .latest {
+  font-size: 4rem;
+  text-align: center;
+  margin: 30px 0 20px 0;
+}
+.main .pint-loader {
+  height: 80px;
+  width: 80px;
+  background: url("../img/pint-loader.png") no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  animation: pint-loader 3s step-start infinite;
+  transform: translateX(5px);
+}
+.main .text {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background-color: #111111;
+  border-radius: 1rem;
+}
+.footer .copy {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+@media (max-width: 400px) {
+  header .main__title {
+    font-size: 5rem;
+  }
+
+  .main .latest {
+    width: 250px;
+    font-size: 3rem;
+  }
+
+  .main .text {
+    font-size: 1.5rem;
+  }
+}
+@keyframes pint-loader {
+  0% {
+    background-image: url("../img/pint-loader.png");
+  }
+  17% {
+    background-image: url("../img/pint-loader.png");
+  }
+  33% {
+    background-image: url("../img/pint-loader2.png");
+  }
+  50% {
+    background-image: url("../img/pint-loader3.png");
+  }
+  66% {
+    background-image: url("../img/pint-loader4.png");
+  }
+  83% {
+    background-image: url("../img/pint-loader5.png");
+  }
+  100% {
+    background-image: url("../img/pint-loader6.png");
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
